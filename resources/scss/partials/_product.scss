@@ -1,0 +1,16 @@
+.movie-box{
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+
+    .movie-txt{
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.719);
+        h1{
+            color: red;
+        }
+        h3{
+            color: white;
+        }
+    }
+}
