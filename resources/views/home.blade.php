@@ -3,7 +3,7 @@
 @section("content")
     <h1>home</h1>
     <div class="container d-flex flex-wrap">
-        @foreach ($movies as $movie)
+        @foreach ($movies as  $key => $movie)
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{$movie['title']}}</h5>
@@ -11,7 +11,7 @@
                     <p class="card-text">{{$movie['nationality']}}</p>
                     <p class="card-text">{{$movie['date']}}</p>
                     <p class="card-text">{{$movie['vote']}}</p>
-                    <a href="#" class="card-link">Card link</a>
+                    <a href="{{ route('product', ['id' => $movie->id]) }}" class="card-link">Card link</a>
                 </div>
             </div>
         @endforeach
